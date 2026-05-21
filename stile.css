@@ -1,0 +1,133 @@
+body{
+    background:linear-gradient(#1E90FF, #00ffff 60vh,#D23D60, #09446E);
+    min-height:100vh;
+    overflow:hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --font-1: 'Engagement', cursive;
+    --font-2: 'Oswald', sans-serif;
+    --font-3: 'Rammetto One', cursive;
+    --font-4: 'Cookie', cursive;
+}
+:before, 
+:after{
+    content:'';
+    position:absolute;
+}
+canvas{
+    position:absolute;
+    top:25%;
+    left:0;
+}
+.jd__scene,
+.jd__app,
+.jd__wave{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    left:0;
+}
+.jd__scene{
+    background:url(https://i.postimg.cc/BsdvDJyH/forest-2.png)center bottom no-repeat fixed;
+    z-index:-1;
+}
+.jd__scene img{
+    position:absolute;
+}
+.jd__cloud1{
+    width:450px;
+    top:100px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 90s linear infinite;
+}
+.jd__cloud2{
+    width:550px;
+    top:80px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 120s linear infinite;
+}
+.jd__cloud3{
+    width:600px;
+    top:110px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 80s linear infinite;
+}
+.jd__cloud4{
+    width:450px;
+    top:100px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 70s linear infinite;
+    animation-delay:-40s;
+}
+.jd__cloud5{
+    width:750px;
+    top:100px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 120s linear infinite;
+    animation-delay:-30s;
+}
+.jd__cloud6{
+    width:600px;
+    top:110px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 90s linear infinite;
+    animation-delay:-22s;
+}
+@keyframes move{
+    0%{
+        transform:translateX(-100%) scale(1);
+    }
+    0%{
+        transform:translateX(calc(100vw + 100%)) scale(1.2);
+    }
+}
+.jd__logo,
+.jd__sun{
+    position:absolute;
+}
+.jd__logo{
+    width:280px;
+    height:280px;
+    background:transparent;
+    border-radius:50%;
+    top:110px;
+    left:45%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.jd__logo img{
+    width:250px;
+}
+.jd__sun{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#FFDC2E;
+    top:100px;
+    right:100px;
+    box-shadow:0 0 50px 30px rgba(255,244,94,.7);
+    animation:pulse 23s ease-in-out infinite;
+}
+@keyframes pulse{
+    0%{
+        box-shadow:0 0 50px 30px rgba(255,244,94,.7);
+    }
+    50%{
+        box-shadow:0 0 50px 30px rgba(255,244,94,1);
+    }
+    100%{
+        box-shadow:0 0 50px 30px rgba(255,244,94,.7);
+    }
+}
